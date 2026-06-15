@@ -30,13 +30,13 @@ export class ApiKeyGuard implements CanActivate {
 
     const request = context.switchToHttp().getRequest<Request>();
     const apiKey = request.header('x-api-key');
-    const expected = this.config.get<string>('API_KEY', 'secret123');
+    const expected = this.config.get<string>('API_KEY', process.env.API_KEY ?? '');
     if (apiKey !== expected) {
       throw new UnauthorizedException('Invalid or missing x-api-key header');
     }
 
     // Attach a "user" so downstream @User() decorators / handlers can read it.
-    (request as Request & { user?: unknown }).user = { name: 'api-client' };
+    (request as Request & { user?: unknown }).user = { name: 'Ashish Kapoor' };
     return true;
   }
 }

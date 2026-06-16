@@ -1,4 +1,4 @@
-# nestjs-getting-started
+# nestjs-concepts
 
 A learning project that builds a full Tasks REST API using NestJS. Each layer of the framework is demonstrated with working code: modules, controllers, services, guards, interceptors, pipes, filters, middleware, custom decorators, TypeORM + Postgres, JWT auth, background queues (Bull + Redis), cron scheduling, in-memory caching, Swagger/OpenAPI, and environment validation with Zod.
 

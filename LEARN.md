@@ -155,8 +155,8 @@ use **migrations** (off by default here). Never commit real DB credentials — `
 ## Where to go next (real-app building blocks)
 
 1. **Database**: ✅ done — `@nestjs/typeorm` + Postgres, repos injected, migrations. Next: transactions,
-   indexes, and a separate test database. See `learnings-2.html` for the full write-up
-   (and `learnings-1.html` for the NestJS fundamentals this project started from).
+   indexes, and a separate test database. See `docs/learnings-2.html` for the full write-up
+   (and `docs/learnings-1.html` for the NestJS fundamentals this project started from).
 2. **Auth**: `@nestjs/passport` + `@nestjs/jwt` → `AuthGuard('jwt')`, `@Roles()` guard.
 3. **Config/validation**: `@nestjs/config` with a Joi/zod schema for env vars.
 4. **API docs**: `@nestjs/swagger` → auto OpenAPI from your DTOs/decorators.
